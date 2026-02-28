@@ -13,7 +13,7 @@ export function ContactSection() {
       label: 'Email',
       value: profile.email,
       href: `mailto:${profile.email}`,
-      gradient: 'from-indigo-500 to-purple-600',
+      gradient: 'from-blue-500 to-sky-600',
     },
     {
       icon: Phone,
@@ -64,7 +64,7 @@ export function ContactSection() {
           viewport={{ once: true }}
           className="lg:col-span-2"
         >
-          <div className="h-full bg-gradient-to-br from-indigo-600 via-purple-600 to-indigo-700 rounded-2xl p-6 text-white shadow-xl shadow-indigo-500/20 relative overflow-hidden">
+          <div className="h-full bg-gradient-to-br from-blue-600 via-sky-600 to-blue-700 rounded-2xl p-6 text-white shadow-xl shadow-blue-500/20 relative overflow-hidden">
             {/* Decorative circles */}
             <div className="absolute -top-12 -right-12 w-40 h-40 rounded-full bg-white/5" />
             <div className="absolute -bottom-8 -left-8 w-32 h-32 rounded-full bg-white/5" />

@@ -25,12 +25,12 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center shadow-md">
+              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-sky-600 flex items-center justify-center shadow-md">
                 <Code2 className="w-4 h-4 text-white" />
               </div>
               <span className="font-bold text-gray-900 dark:text-white">
                 {profile.name.split(' ')[0]}
-                <span className="text-indigo-600 dark:text-indigo-400">.</span>
+                <span className="text-blue-600 dark:text-blue-400">.</span>
               </span>
             </div>
             <p className="text-gray-500 dark:text-gray-400 text-sm mb-2 leading-relaxed">
@@ -51,7 +51,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-500 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400 text-sm transition-colors"
+                    className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 text-sm transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -72,7 +72,7 @@ export function Footer() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2.5 text-gray-500 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-950/30 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-indigo-200 dark:hover:border-indigo-800/60 transition-all duration-200"
+                  className="p-2.5 text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-950/30 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-blue-200 dark:hover:border-blue-800/60 transition-all duration-200"
                   aria-label={label}
                 >
                   <Icon className="w-4.5 h-4.5" />

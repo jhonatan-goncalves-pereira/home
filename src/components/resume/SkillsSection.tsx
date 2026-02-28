@@ -20,9 +20,9 @@ function getSkillConfig(level: number): {
   };
   if (level >= 75) return {
     label: 'Avançado',
-    dotClass: 'bg-indigo-500',
-    badgeClass: 'bg-indigo-50 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300 border-indigo-200 dark:border-indigo-800/50',
-    barClass: 'from-indigo-500 to-purple-400',
+    dotClass: 'bg-blue-500',
+    badgeClass: 'bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 border-blue-200 dark:border-blue-800/50',
+    barClass: 'from-blue-500 to-sky-400',
   };
   if (level >= 60) return {
     label: 'Intermediário',
@@ -79,9 +79,9 @@ const categoryIcons: Record<string, React.ReactNode> = {
 
 // Category gradient colors
 const categoryGradients: Record<string, string> = {
-  Languages: 'from-violet-500 to-purple-600',
+  Languages: 'from-blue-500 to-sky-600',
   Frontend: 'from-blue-500 to-cyan-500',
-  Backend: 'from-indigo-500 to-blue-600',
+  Backend: 'from-blue-500 to-blue-600',
   Databases: 'from-emerald-500 to-teal-600',
   'Cloud & DevOps': 'from-sky-500 to-blue-600',
   Metodologias: 'from-orange-500 to-amber-500',
@@ -111,7 +111,7 @@ function SkillCategory({ category, index }: { category: string; index: number })
   if (categorySkills.length === 0) return null;
 
   const sortedSkills = [...categorySkills].sort((a, b) => b.level - a.level);
-  const gradient = categoryGradients[category] ?? 'from-indigo-500 to-purple-600';
+  const gradient = categoryGradients[category] ?? 'from-blue-500 to-sky-600';
   const icon = categoryIcons[category];
 
   return (
@@ -120,7 +120,7 @@ function SkillCategory({ category, index }: { category: string; index: number })
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay: index * 0.06, ease: [0.16, 1, 0.3, 1] }}
       viewport={{ once: true, margin: '-40px' }}
-      className="group bg-white dark:bg-gray-900/80 rounded-2xl p-5 border border-gray-200 dark:border-gray-800 hover:border-indigo-200 dark:hover:border-indigo-800/60 shadow-sm hover:shadow-md transition-all duration-300"
+      className="group bg-white dark:bg-gray-900/80 rounded-2xl p-5 border border-gray-200 dark:border-gray-800 hover:border-blue-200 dark:hover:border-blue-800/60 shadow-sm hover:shadow-md transition-all duration-300"
     >
       {/* Category header */}
       <div className="flex items-center gap-3 mb-4">
@@ -153,7 +153,7 @@ export function SkillsSection() {
         <span className="text-gray-500 dark:text-gray-400 font-semibold uppercase tracking-wide text-xs">Nível:</span>
         {[
           { dot: 'bg-emerald-500', label: 'Expert (90%+)' },
-          { dot: 'bg-indigo-500', label: 'Avançado (75%+)' },
+          { dot: 'bg-blue-500', label: 'Avançado (75%+)' },
           { dot: 'bg-amber-500', label: 'Intermediário (60%+)' },
         ].map(({ dot, label }) => (
           <span key={label} className="inline-flex items-center gap-1.5 text-gray-600 dark:text-gray-400">

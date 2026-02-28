@@ -32,7 +32,7 @@ export function ProfileHeader() {
       <div className="absolute inset-0 dot-grid opacity-40" />
 
       {/* Decorative orbs */}
-      <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-indigo-500/10 dark:bg-indigo-500/15 blur-3xl pointer-events-none" />
+      <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-blue-500/10 dark:bg-blue-500/15 blur-3xl pointer-events-none" />
       <div className="absolute -bottom-24 -left-24 w-80 h-80 rounded-full bg-cyan-500/8 dark:bg-cyan-500/12 blur-3xl pointer-events-none" />
 
       <motion.div
@@ -45,8 +45,8 @@ export function ProfileHeader() {
         <motion.div variants={photoVariants} className="flex-shrink-0">
           <div className="relative">
             {/* Animated ring */}
-            <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-indigo-500 via-purple-500 to-cyan-500 opacity-80 blur-sm animate-pulse-glow" />
-            <div className="absolute -inset-0.5 rounded-full bg-gradient-to-br from-indigo-500 via-purple-500 to-cyan-500" />
+            <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-blue-500 via-sky-500 to-cyan-500 opacity-80 blur-sm animate-pulse-glow" />
+            <div className="absolute -inset-0.5 rounded-full bg-gradient-to-br from-blue-500 via-sky-500 to-cyan-500" />
 
             <div className="relative w-44 h-44 rounded-full overflow-hidden border-4 border-white dark:border-gray-900 shadow-2xl">
               <Image
@@ -69,8 +69,8 @@ export function ProfileHeader() {
         {/* Content */}
         <div className="flex-1 text-center lg:text-left min-w-0">
           {/* Badge */}
-          <motion.div variants={itemVariants} className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-500/10 dark:bg-indigo-500/20 border border-indigo-500/20 dark:border-indigo-500/30 text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-4">
-            <span className="w-2 h-2 rounded-full bg-indigo-500 animate-pulse" />
+          <motion.div variants={itemVariants} className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 dark:bg-blue-500/20 border border-blue-500/20 dark:border-blue-500/30 text-blue-600 dark:text-blue-400 text-sm font-medium mb-4">
+            <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
             Disponível para oportunidades
           </motion.div>
 
@@ -96,7 +96,7 @@ export function ProfileHeader() {
             {['React', 'Next.js', 'Node.js', 'TypeScript', 'Java', 'Spring Boot'].map((tech) => (
               <span
                 key={tech}
-                className="px-3 py-1 text-xs font-semibold rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:border-indigo-400 dark:hover:border-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors cursor-default"
+                className="px-3 py-1 text-xs font-semibold rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-default"
               >
                 {tech}
               </span>
@@ -110,7 +110,7 @@ export function ProfileHeader() {
           >
             <a
               href={`mailto:${profile.email}`}
-              className="flex items-center gap-1.5 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors group"
+              className="flex items-center gap-1.5 hover:text-blue-600 dark:hover:text-blue-400 transition-colors group"
             >
               <Mail className="w-4 h-4 group-hover:scale-110 transition-transform" />
               <span>{profile.email}</span>
@@ -118,7 +118,7 @@ export function ProfileHeader() {
             {profile.phone && (
               <a
                 href={`tel:${profile.phone}`}
-                className="flex items-center gap-1.5 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors group"
+                className="flex items-center gap-1.5 hover:text-blue-600 dark:hover:text-blue-400 transition-colors group"
               >
                 <Phone className="w-4 h-4 group-hover:scale-110 transition-transform" />
                 <span>({profile.phone.slice(0, 2)}) {profile.phone.slice(2, 7)}-{profile.phone.slice(7)}</span>
@@ -138,7 +138,7 @@ export function ProfileHeader() {
             {/* Primary CTA */}
             <a
               href="/print"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm text-white bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm text-white bg-gradient-to-r from-blue-600 to-sky-600 hover:from-blue-500 hover:to-sky-500 shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0"
             >
               <Download className="w-4 h-4" />
               Download CV
@@ -150,7 +150,7 @@ export function ProfileHeader() {
                 href={profile.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-semibold text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-indigo-400 dark:hover:border-indigo-500 shadow-sm hover:shadow-md transition-all duration-200 hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-semibold text-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500 shadow-sm hover:shadow-md transition-all duration-200 hover:-translate-y-0.5"
               >
                 <Github className="w-4 h-4" />
                 GitHub

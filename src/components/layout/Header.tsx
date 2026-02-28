@@ -41,12 +41,12 @@ export function Header() {
             href="/"
             className="flex items-center gap-2.5 group"
           >
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center shadow-md group-hover:shadow-indigo-500/40 transition-shadow">
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-sky-600 flex items-center justify-center shadow-md group-hover:shadow-blue-500/40 transition-shadow">
               <Code2 className="w-4 h-4 text-white" />
             </div>
             <span className="font-bold text-base text-gray-900 dark:text-white tracking-tight">
               {profile.name.split(' ')[0]}
-              <span className="text-indigo-600 dark:text-indigo-400">.</span>
+              <span className="text-blue-600 dark:text-blue-400">.</span>
             </span>
           </Link>
 
@@ -67,7 +67,7 @@ export function Header() {
           <div className="hidden md:flex items-center gap-3">
             <a
               href="/print"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 shadow-md shadow-indigo-500/20 hover:shadow-indigo-500/35 transition-all duration-200 hover:-translate-y-px"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-sky-600 hover:from-blue-500 hover:to-sky-500 shadow-md shadow-blue-500/20 hover:shadow-blue-500/35 transition-all duration-200 hover:-translate-y-px"
             >
               <Download className="w-3.5 h-3.5" />
               Currículo
@@ -106,7 +106,7 @@ export function Header() {
               <div className="px-1 pt-2">
                 <a
                   href="/print"
-                  className="flex items-center justify-center gap-2 w-full px-4 py-2.5 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-indigo-600 to-purple-600 shadow-md"
+                  className="flex items-center justify-center gap-2 w-full px-4 py-2.5 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-sky-600 shadow-md"
                 >
                   <Download className="w-4 h-4" />
                   Download Currículo

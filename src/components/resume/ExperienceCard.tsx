@@ -35,16 +35,16 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
     <motion.div
       whileHover={{ y: -2 }}
       transition={{ duration: 0.2 }}
-      className="group relative bg-white dark:bg-gray-900/80 rounded-2xl p-6 border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-lg hover:border-indigo-200 dark:hover:border-indigo-800/60 transition-all duration-300"
+      className="group relative bg-white dark:bg-gray-900/80 rounded-2xl p-6 border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-lg hover:border-blue-200 dark:hover:border-blue-800/60 transition-all duration-300"
     >
       {/* Gradient accent on hover */}
-      <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-indigo-500/0 to-purple-500/0 group-hover:from-indigo-500/3 group-hover:to-purple-500/3 transition-all duration-300 pointer-events-none" />
+      <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-500/0 to-sky-500/0 group-hover:from-blue-500/3 group-hover:to-sky-500/3 transition-all duration-300 pointer-events-none" />
 
       <div className="relative">
         <div className="flex flex-col sm:flex-row sm:items-start gap-4 mb-4">
           {/* Company Logo */}
-          <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-900/40 dark:to-purple-900/40 flex items-center justify-center flex-shrink-0 border border-indigo-200/50 dark:border-indigo-700/30 shadow-sm">
-            <span className="text-sm font-bold text-indigo-600 dark:text-indigo-400">
+          <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-100 to-sky-100 dark:from-blue-900/40 dark:to-sky-900/40 flex items-center justify-center flex-shrink-0 border border-blue-200/50 dark:border-blue-700/30 shadow-sm">
+            <span className="text-sm font-bold text-blue-600 dark:text-blue-400">
               {initials}
             </span>
           </div>
@@ -62,7 +62,7 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
               )}
             </div>
 
-            <p className="text-indigo-600 dark:text-indigo-400 font-semibold text-sm mb-2">
+            <p className="text-blue-600 dark:text-blue-400 font-semibold text-sm mb-2">
               {experience.company}
             </p>
 
@@ -93,7 +93,7 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
         <ul className="space-y-2 mb-4">
           {experience.achievements.map((achievement, i) => (
             <li key={i} className="flex items-start gap-2.5 text-sm text-gray-700 dark:text-gray-300">
-              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0" />
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0" />
               {achievement}
             </li>
           ))}
@@ -104,7 +104,7 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
           {experience.technologies.map((tech) => (
             <span
               key={tech}
-              className="px-2.5 py-0.5 text-xs font-medium rounded-md bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-indigo-300 dark:hover:border-indigo-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors cursor-default"
+              className="px-2.5 py-0.5 text-xs font-medium rounded-md bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-default"
             >
               {tech}
             </span>

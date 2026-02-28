@@ -12,15 +12,15 @@ export function Summary() {
       transition={{ duration: 0.6, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
       className="mb-12"
     >
-      <div className="relative rounded-2xl bg-gradient-to-br from-indigo-50 to-purple-50/50 dark:from-indigo-950/30 dark:to-purple-950/20 border border-indigo-100 dark:border-indigo-900/40 p-6 md:p-8">
+      <div className="relative rounded-2xl bg-gradient-to-br from-blue-50 to-sky-50/50 dark:from-blue-950/30 dark:to-sky-950/20 border border-blue-100 dark:border-blue-900/40 p-6 md:p-8">
         {/* Decorative quote mark */}
-        <div className="absolute top-4 right-6 text-6xl font-serif text-indigo-200 dark:text-indigo-800/50 leading-none select-none pointer-events-none">
+        <div className="absolute top-4 right-6 text-6xl font-serif text-blue-200 dark:text-blue-800/50 leading-none select-none pointer-events-none">
           &ldquo;
         </div>
 
         <div className="flex items-start gap-3 mb-4">
-          <div className="w-8 h-8 rounded-lg bg-indigo-500/10 dark:bg-indigo-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-            <Sparkles className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
+          <div className="w-8 h-8 rounded-lg bg-blue-500/10 dark:bg-blue-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+            <Sparkles className="w-4 h-4 text-blue-600 dark:text-blue-400" />
           </div>
           <h2 className="text-lg font-bold text-gray-900 dark:text-white">Sobre mim</h2>
         </div>
@@ -39,7 +39,7 @@ export function Summary() {
               transition={{ duration: 0.4, delay: 0.4 + index * 0.06 }}
               className="flex items-start gap-2.5 text-sm text-gray-700 dark:text-gray-300 bg-white/60 dark:bg-gray-900/40 rounded-xl px-3 py-2.5 border border-white dark:border-gray-800/60"
             >
-              <span className="mt-1 w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0" />
+              <span className="mt-1 w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0" />
               <span>{highlight}</span>
             </motion.div>
           ))}

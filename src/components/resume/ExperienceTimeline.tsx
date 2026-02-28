@@ -10,7 +10,7 @@ export function ExperienceTimeline() {
     <Section id="experience" title="Experiência" subtitle="Minha jornada profissional">
       <div className="relative">
         {/* Timeline line — gradient */}
-        <div className="absolute left-6 top-4 bottom-4 w-px bg-gradient-to-b from-indigo-500 via-purple-500/50 to-transparent hidden md:block" />
+        <div className="absolute left-6 top-4 bottom-4 w-px bg-gradient-to-b from-blue-500 via-sky-500/50 to-transparent hidden md:block" />
 
         <div className="space-y-6">
           {experience.map((exp, index) => (
@@ -24,9 +24,9 @@ export function ExperienceTimeline() {
             >
               {/* Timeline dot */}
               <div className="absolute left-3.5 top-6 hidden md:flex items-center justify-center">
-                <div className="w-5 h-5 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 border-2 border-white dark:border-gray-950 shadow-md shadow-indigo-500/30" />
+                <div className="w-5 h-5 rounded-full bg-gradient-to-br from-blue-500 to-sky-600 border-2 border-white dark:border-gray-950 shadow-md shadow-blue-500/30" />
                 {exp.current && (
-                  <div className="absolute w-5 h-5 rounded-full bg-indigo-500/30 animate-ping" />
+                  <div className="absolute w-5 h-5 rounded-full bg-blue-500/30 animate-ping" />
                 )}
               </div>
 

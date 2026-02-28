@@ -154,7 +154,7 @@ export const siteConfig: SiteConfig = {
     // - Pink: "330 70% 50%"
     // - Teal: "180 70% 45%"
     // - Red: "0 80% 50%"
-    primaryColor: '220 92% 50%',
+    primaryColor: '200 85% 55%',
     darkModeEnabled: true,
     defaultColorMode: 'system',
     fontFamily: 'Inter',

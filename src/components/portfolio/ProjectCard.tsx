@@ -25,7 +25,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       className="group relative bg-white dark:bg-gray-900 rounded-xl overflow-hidden border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-lg transition-all duration-300"
     >
       {/* Thumbnail */}
-      <div className="relative h-48 bg-gradient-to-br from-blue-500 to-purple-600 overflow-hidden">
+      <div className="relative h-48 bg-gradient-to-br from-blue-500 to-sky-600 overflow-hidden">
         {/* Placeholder gradient - replace with actual image when available */}
         <div className="absolute inset-0 flex items-center justify-center">
           <span className="text-white/50 text-4xl font-bold">

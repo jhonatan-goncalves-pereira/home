@@ -33,7 +33,7 @@ export function Progress({
   const colors = {
     blue: 'bg-blue-600',
     green: 'bg-green-600',
-    purple: 'bg-purple-600',
+    purple: 'bg-sky-600',
     orange: 'bg-orange-600',
   };
 

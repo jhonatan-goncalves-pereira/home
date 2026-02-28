@@ -13,8 +13,8 @@ const levelConfig: Record<string, { label: string; color: string; bg: string; wi
   },
   Professional: {
     label: 'Profissional',
-    color: 'text-indigo-700 dark:text-indigo-400',
-    bg: 'bg-indigo-500',
+    color: 'text-blue-700 dark:text-blue-400',
+    bg: 'bg-blue-500',
     width: 'w-4/5',
   },
   Intermediate: {

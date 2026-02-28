@@ -24,17 +24,17 @@ export function CertificationsSection() {
             transition={{ duration: 0.4, delay: index * 0.06, ease: [0.16, 1, 0.3, 1] }}
             viewport={{ once: true, margin: '-40px' }}
             whileHover={{ y: -2 }}
-            className="group bg-white dark:bg-gray-900/80 rounded-2xl p-5 border border-gray-200 dark:border-gray-800 hover:border-purple-200 dark:hover:border-purple-800/60 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col"
+            className="group bg-white dark:bg-gray-900/80 rounded-2xl p-5 border border-gray-200 dark:border-gray-800 hover:border-sky-200 dark:hover:border-sky-800/60 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col"
           >
             <div className="flex items-start gap-3 mb-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-100 to-indigo-100 dark:from-purple-900/40 dark:to-indigo-900/40 flex items-center justify-center flex-shrink-0 border border-purple-200/50 dark:border-purple-700/30">
-                <Award className="w-5 h-5 text-purple-600 dark:text-purple-400" />
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-sky-100 to-blue-100 dark:from-sky-900/40 dark:to-blue-900/40 flex items-center justify-center flex-shrink-0 border border-sky-200/50 dark:border-sky-700/30">
+                <Award className="w-5 h-5 text-sky-600 dark:text-sky-400" />
               </div>
               <div className="flex-1 min-w-0">
                 <h3 className="font-bold text-sm text-gray-900 dark:text-white leading-tight mb-1">
                   {cert.name}
                 </h3>
-                <p className="text-xs font-semibold text-purple-600 dark:text-purple-400">
+                <p className="text-xs font-semibold text-sky-600 dark:text-sky-400">
                   {cert.issuer}
                 </p>
               </div>
@@ -56,7 +56,7 @@ export function CertificationsSection() {
                   href={cert.credentialUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
                 >
                   Ver Credencial
                   <ExternalLink className="w-3 h-3" />
