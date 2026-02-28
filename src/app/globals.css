@@ -28,7 +28,7 @@
   --gradient-hero: linear-gradient(135deg, hsl(200 85% 55% / 0.08) 0%, hsl(195 90% 60% / 0.05) 100%);
   --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(210 20% 98%) 100%);
   --gradient-primary: linear-gradient(135deg, hsl(200 85% 55%) 0%, hsl(210 80% 50%) 50%, hsl(195 90% 60%) 100%);
-  --gradient-text: linear-gradient(135deg, hsl(200 85% 50%) 0%, hsl(195 90% 60%) 100%);
+  --gradient-text: linear-gradient(135deg, hsl(210 95% 35%) 0%, hsl(200 90% 40%) 50%, hsl(195 95% 45%) 100%);
 
   /* Shadows */
   --shadow-sm: 0 1px 3px hsl(210 20% 8% / 0.06), 0 1px 2px hsl(210 20% 8% / 0.04);
@@ -128,14 +128,14 @@ body {
 
 /* Gradient Text — ULTRA PREMIUM with vibrant contrast */
 .gradient-text {
-  background: linear-gradient(135deg, hsl(200 90% 45%) 0%, hsl(195 95% 55%) 50%, hsl(190 85% 60%) 100%);
+  background: linear-gradient(135deg, hsl(220 100% 25%) 0%, hsl(210 95% 30%) 50%, hsl(200 95% 35%) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .gradient-text-wide {
-  background: linear-gradient(135deg, hsl(200 90% 45%) 0%, hsl(210 85% 50%) 50%, hsl(195 95% 55%) 100%);
+  background: linear-gradient(135deg, hsl(220 100% 25%) 0%, hsl(215 95% 28%) 50%, hsl(205 95% 32%) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
