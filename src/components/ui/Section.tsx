@@ -14,11 +14,17 @@ export function Section({ children, id, title, subtitle, className }: SectionPro
       {(title || subtitle) && (
         <div className="mb-10">
           {title && (
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">{title}</h2>
+            <div className="flex items-center gap-4 mb-3">
+              <div className="h-px flex-1 max-w-8 bg-gradient-to-r from-indigo-500 to-transparent" />
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white tracking-tight">
+                {title}
+              </h2>
+            </div>
           )}
           {subtitle && (
-            <p className="text-lg text-gray-600 dark:text-gray-400">{subtitle}</p>
+            <p className="text-base text-gray-500 dark:text-gray-400 ml-12">{subtitle}</p>
           )}
+          <div className="mt-4 h-px bg-gradient-to-r from-indigo-500/30 via-purple-500/20 to-transparent" />
         </div>
       )}
       {children}

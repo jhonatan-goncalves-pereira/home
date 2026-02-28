@@ -22,13 +22,13 @@ export interface Profile {
 export const profile: Profile = {
   name: 'Jhonatan Gonçalves',
   title: 'Desenvolvedor FullStack Pleno | React · Node.js · Java | QA & Power BI',
-  photo: '/images/profile.jpg',
-  email: 'jhonatangoncalves2002@gmail.com',
+  photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStCIcsUthPouVDRMNxZyrtjxFz91sNoO6xcA&s',
+  email: 'jhonatan.pereira@urca.br',
+  phone: '88992909975',
   location: 'Juazeiro do Norte, CE, Brasil',
 
   linkedin: 'https://www.linkedin.com/in/jhonatangoncalves-pereira',
   github: 'https://github.com/jhonatan-goncalvespereira',
-  website: 'https://jhonatan-goncalvespereira.github.io/residencia-iuul/',
 
   summary: `Desenvolvedor FullStack Pleno com sólida experiência em React, Next.js, Node.js, Java e Spring Boot. Atuo no desenvolvimento de aplicações web completas — do design de interfaces responsivas com Tailwind CSS e React até APIs RESTful robustas com Node.js/Express e Spring Boot, integradas a bancos de dados relacionais (PostgreSQL, MySQL) e não-relacionais. Tenho experiência em QA (Selenium, Cypress, REST Assured), análise de dados com Power BI e atuação em projetos de transformação digital no setor público e privado. Fundador da startup Integra Cariri e bolsista CNPq, com foco em código limpo, boas práticas (SOLID, Clean Code) e entrega de valor real através da tecnologia.`,
 

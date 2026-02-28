@@ -3,72 +3,72 @@
 import { motion } from 'framer-motion';
 import { Award, ExternalLink, Calendar } from 'lucide-react';
 import { certifications } from '@/data/education';
-import { Section, Card, CardContent, Badge } from '@/components/ui';
+import { Section } from '@/components/ui';
 
 export function CertificationsSection() {
   const formatDate = (date: string) => {
-    return new Date(date + '-01').toLocaleDateString('en-US', {
+    return new Date(date + '-01').toLocaleDateString('pt-BR', {
       month: 'short',
       year: 'numeric',
     });
   };
 
   return (
-    <Section title="Certifications" subtitle="Professional certifications and credentials">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <Section title="Certificações" subtitle="Certificados e credenciais profissionais">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {certifications.map((cert, index) => (
           <motion.div
             key={cert.id}
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.3, delay: index * 0.1 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 0, scale: 0.95, y: 12 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: index * 0.06, ease: [0.16, 1, 0.3, 1] }}
+            viewport={{ once: true, margin: '-40px' }}
+            whileHover={{ y: -2 }}
+            className="group bg-white dark:bg-gray-900/80 rounded-2xl p-5 border border-gray-200 dark:border-gray-800 hover:border-purple-200 dark:hover:border-purple-800/60 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col"
           >
-            <Card hover className="h-full">
-              <CardContent className="p-6 flex flex-col h-full">
-                <div className="flex items-start gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center flex-shrink-0">
-                    <Award className="w-5 h-5 text-purple-600 dark:text-purple-400" />
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <h3 className="font-semibold text-gray-900 dark:text-white text-sm leading-tight">
-                      {cert.name}
-                    </h3>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                      {cert.issuer}
-                    </p>
-                  </div>
-                </div>
+            <div className="flex items-start gap-3 mb-3">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-100 to-indigo-100 dark:from-purple-900/40 dark:to-indigo-900/40 flex items-center justify-center flex-shrink-0 border border-purple-200/50 dark:border-purple-700/30">
+                <Award className="w-5 h-5 text-purple-600 dark:text-purple-400" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <h3 className="font-bold text-sm text-gray-900 dark:text-white leading-tight mb-1">
+                  {cert.name}
+                </h3>
+                <p className="text-xs font-semibold text-purple-600 dark:text-purple-400">
+                  {cert.issuer}
+                </p>
+              </div>
+            </div>
 
-                <div className="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-500 mb-4">
-                  <Calendar className="w-3.5 h-3.5" />
-                  <span>Issued {formatDate(cert.date)}</span>
-                  {cert.expirationDate && (
-                    <span>· Expires {formatDate(cert.expirationDate)}</span>
-                  )}
-                </div>
+            <div className="flex items-center gap-1.5 text-xs text-gray-500 dark:text-gray-400 mb-4">
+              <Calendar className="w-3.5 h-3.5" />
+              <span>Emitido em {formatDate(cert.date)}</span>
+              {cert.expirationDate && (
+                <span className="text-gray-400 dark:text-gray-500">
+                  · Expira {formatDate(cert.expirationDate)}
+                </span>
+              )}
+            </div>
 
-                <div className="mt-auto">
-                  {cert.credentialUrl ? (
-                    <a
-                      href={cert.credentialUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-sm text-blue-600 dark:text-blue-400 hover:underline"
-                    >
-                      View Credential
-                      <ExternalLink className="w-3.5 h-3.5" />
-                    </a>
-                  ) : (
-                    cert.credentialId && (
-                      <Badge variant="secondary" size="sm">
-                        ID: {cert.credentialId}
-                      </Badge>
-                    )
-                  )}
-                </div>
-              </CardContent>
-            </Card>
+            <div className="mt-auto">
+              {cert.credentialUrl ? (
+                <a
+                  href={cert.credentialUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors"
+                >
+                  Ver Credencial
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+              ) : (
+                cert.credentialId && (
+                  <span className="text-xs text-gray-400 dark:text-gray-500 font-mono">
+                    ID: {cert.credentialId}
+                  </span>
+                )
+              )}
+            </div>
           </motion.div>
         ))}
       </div>
