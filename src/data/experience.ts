@@ -2,225 +2,266 @@
  * =============================================================================
  * EXPERIENCE DATA - Work History
  * =============================================================================
- *
- * AI CUSTOMIZATION INSTRUCTIONS:
- * This file contains work history displayed in the Experience section.
- *
- * TO CUSTOMIZE:
- * 1. Replace the example entries with your actual work history
- * 2. List positions in reverse chronological order (newest first)
- * 3. Use action verbs for achievements (Led, Built, Increased, Reduced, etc.)
- * 4. Include metrics when possible (numbers, percentages, dollar amounts)
- * 5. List relevant technologies used at each position
- *
- * TO ADD A NEW EXPERIENCE:
- * Copy an existing entry and modify all fields. Example:
- * {
- *   id: 'exp-4',  // Unique identifier
- *   title: 'Your Job Title',
- *   company: 'Company Name',
- *   location: 'City, State/Country',
- *   type: 'full-time',  // Options: 'full-time' | 'part-time' | 'contract' | 'freelance'
- *   startDate: '2023-01',  // Format: YYYY-MM
- *   endDate: '2024-01',    // Format: YYYY-MM or omit for current position
- *   current: false,        // Set to true if this is your current job
- *   description: 'Brief description of your role...',
- *   achievements: ['Achievement 1', 'Achievement 2'],
- *   technologies: ['Tech 1', 'Tech 2'],
- * }
- *
- * TO REMOVE AN EXPERIENCE:
- * Delete the entire object from the array including its curly braces and comma.
- * =============================================================================
  */
 
-/**
- * Experience entry type definition
- */
 export interface Experience {
-  /** Unique identifier (e.g., 'exp-1', 'exp-2') */
   id: string;
-
-  /** Job title (e.g., "Senior Software Engineer", "Product Manager") */
   title: string;
-
-  /** Company name */
   company: string;
-
-  /**
-   * Company logo path (optional)
-   * - Use '/logos/company.png' for local image in public/logos/
-   * - Use full URL for external image
-   * - Omit or use undefined for no logo
-   */
   companyLogo?: string;
-
-  /**
-   * Location
-   * Format: "City, State/Country" or "Remote"
-   */
   location: string;
-
-  /**
-   * Employment type
-   * Options: 'full-time' | 'part-time' | 'contract' | 'freelance'
-   */
   type: 'full-time' | 'part-time' | 'contract' | 'freelance';
-
-  /**
-   * Start date in YYYY-MM format
-   * Example: '2023-01' for January 2023
-   */
   startDate: string;
-
-  /**
-   * End date in YYYY-MM format (optional)
-   * - Omit for current position
-   * - Example: '2024-06' for June 2024
-   */
   endDate?: string;
-
-  /**
-   * Is this your current position?
-   * Set to true if still working here
-   */
   current: boolean;
-
-  /**
-   * Brief description of the role
-   * 1-2 sentences about what you did
-   */
   description: string;
-
-  /**
-   * Key achievements/accomplishments in this role
-   * - Use action verbs (Led, Built, Increased, Reduced, etc.)
-   * - Include metrics when possible
-   * - 3-5 bullet points recommended
-   */
   achievements: string[];
-
-  /**
-   * Technologies/tools used in this role
-   * List programming languages, frameworks, tools, etc.
-   */
   technologies: string[];
 }
 
-/**
- * =============================================================================
- * YOUR WORK EXPERIENCE - CUSTOMIZE BELOW
- * =============================================================================
- *
- * Replace these example entries with your actual work history.
- * Keep positions in reverse chronological order (newest first).
- */
 export const experience: Experience[] = [
-  // ---------------------------------------------------------------------------
-  // CURRENT POSITION (or most recent)
-  // ---------------------------------------------------------------------------
   {
     id: 'exp-1',
-    title: 'Senior Software Engineer',
-    company: 'TechCorp Inc.',
-    // companyLogo: '/logos/techcorp.png',  // Uncomment and add logo if you have one
-    location: 'San Francisco, CA',
-    type: 'full-time',
-    startDate: '2022-01',
-    // endDate: undefined,  // Omit or undefined for current position
+    title: 'Monitor Bolsista',
+    company: 'PET - Programa de Educação Tutorial (PET-Saúde/I&SD)',
+    location: 'Juazeiro do Norte, Ceará, Brasil',
+    type: 'part-time',
+    startDate: '2025-08',
     current: true,
     description:
-      'Lead development of customer-facing web applications and mentor junior developers.',
+      'Monitor bolsista no projeto PET-Saúde Informação e Saúde Digital, no Eixo 2 da Secretaria Municipal de Saúde de Juazeiro do Norte, com foco em interoperabilidade dos sistemas de informação em saúde (DATASUS e e-SUS) e transformação digital do SUS.',
     achievements: [
-      'Architected microservices platform handling 10M+ requests/day',
-      'Reduced deployment time by 80% through CI/CD improvements',
-      'Mentored 3 junior developers to mid-level positions',
-      'Led migration from monolith to microservices architecture',
+      'Análise, organização e sistematização de dados em saúde para qualificar processos de trabalho',
+      'Promoção do letramento digital entre profissionais de saúde',
+      'Fortalecimento da integração entre universidade e serviço público de saúde',
+      'Apoio à transformação digital do SUS no município',
     ],
-    technologies: [
-      'React',
-      'TypeScript',
-      'Node.js',
-      'PostgreSQL',
-      'AWS',
-      'Docker',
-      'Kubernetes',
-    ],
+    technologies: ['DATASUS', 'e-SUS', 'Power BI', 'Análise de Dados'],
   },
 
-  // ---------------------------------------------------------------------------
-  // PREVIOUS POSITION
-  // ---------------------------------------------------------------------------
   {
     id: 'exp-2',
-    title: 'Software Engineer',
-    company: 'StartupXYZ',
-    location: 'San Francisco, CA',
+    title: 'Desenvolvedor Full Stack',
+    company: 'Universidade Regional do Cariri',
+    location: 'Crato, Ceará, Brasil',
     type: 'full-time',
-    startDate: '2019-03',
-    endDate: '2021-12',
-    current: false,
-    description: 'Full-stack development for a fast-growing SaaS platform.',
+    startDate: '2024-08',
+    current: true,
+    description:
+      'Desenvolvimento, manutenção e evolução de sistemas institucionais de média e alta complexidade, com atuação fullstack em backend e frontend, garantindo integração, segurança e performance.',
     achievements: [
-      'Built real-time collaboration features used by 50K+ users',
-      'Implemented automated testing reducing bugs by 40%',
-      'Optimized database queries improving response time by 60%',
+      'Desenvolvimento e consumo de APIs RESTful integrando sistemas internos com plataformas externas',
+      'Modelagem de dados em bancos relacionais com ênfase em integridade, performance e segurança',
+      'Implementação de autenticação segura com tokens JWT e controle de acesso',
+      'Revisões de código, testes funcionais e correção de bugs assegurando entregas estáveis',
+      'Suporte técnico a sistemas internos e colaboração na resolução de incidentes',
     ],
-    technologies: ['React', 'Python', 'Django', 'PostgreSQL', 'Redis', 'AWS'],
+    technologies: [
+      'Node.js',
+      'Express.js',
+      'Java',
+      'Spring Boot',
+      'PHP',
+      'JavaScript',
+      'React',
+      'PostgreSQL',
+      'MySQL',
+      'SQL Server',
+      'Prisma ORM',
+      'Bootstrap',
+      'Chart.js',
+      'JWT',
+    ],
   },
 
-  // ---------------------------------------------------------------------------
-  // EARLIER POSITION
-  // ---------------------------------------------------------------------------
   {
     id: 'exp-3',
-    title: 'Junior Developer',
-    company: 'WebAgency Co.',
-    location: 'Los Angeles, CA',
+    title: 'QA Analyst',
+    company: 'DBC Company',
+    location: 'Porto Alegre, Rio Grande do Sul, Brasil',
     type: 'full-time',
-    startDate: '2016-06',
-    endDate: '2019-02',
+    startDate: '2024-11',
+    endDate: '2025-04',
     current: false,
     description:
-      'Developed custom web solutions for various clients across different industries.',
+      'Atuação com garantia da qualidade de produtos, realizando testes detalhados, colaborando com equipe de desenvolvimento e automatizando processos de QA.',
     achievements: [
-      'Delivered 20+ client projects on time and within budget',
-      'Introduced component-based architecture improving code reuse',
-      'Created internal tools saving 10 hours/week of manual work',
+      'Automação de testes de UI com Selenium WebDriver e Cypress',
+      'Testes de API com Postman e REST Assured',
+      'Implementação de testes de performance e cultura DevOps/CI/CD',
+      'Testes funcionais e ágeis com metodologias Scrum',
     ],
-    technologies: ['JavaScript', 'React', 'PHP', 'MySQL', 'WordPress'],
+    technologies: [
+      'Java',
+      'JavaScript',
+      'Selenium WebDriver',
+      'Cypress',
+      'REST Assured',
+      'Postman',
+      'Docker',
+      'Git',
+      'Oracle DB',
+      'CI/CD',
+    ],
   },
 
-  // ---------------------------------------------------------------------------
-  // ADD MORE POSITIONS HERE
-  // Copy the template below and fill in your details
-  // ---------------------------------------------------------------------------
-  // {
-  //   id: 'exp-4',
-  //   title: 'Your Job Title',
-  //   company: 'Company Name',
-  //   companyLogo: '/logos/company.png',  // Optional
-  //   location: 'City, Country',
-  //   type: 'full-time',
-  //   startDate: 'YYYY-MM',
-  //   endDate: 'YYYY-MM',  // Remove for current position
-  //   current: false,
-  //   description: 'Brief description of your role and responsibilities.',
-  //   achievements: [
-  //     'Achievement with metrics...',
-  //     'Another achievement...',
-  //   ],
-  //   technologies: ['Tech1', 'Tech2', 'Tech3'],
-  // },
+  {
+    id: 'exp-4',
+    title: 'Mentor',
+    company: 'Capacita Brasil',
+    location: 'Brasil (Remoto)',
+    type: 'part-time',
+    startDate: '2024-08',
+    endDate: '2025-04',
+    current: false,
+    description:
+      'Mentoria de alunos no programa Capacita Brasil, apoiando o desenvolvimento de competências técnicas e profissionais em tecnologia.',
+    achievements: [
+      'Orientação e suporte a alunos em trilhas de tecnologia',
+      'Compartilhamento de experiências práticas do mercado de TI',
+    ],
+    technologies: ['Mentoria', 'Educação em TI'],
+  },
+
+  {
+    id: 'exp-5',
+    title: 'Analista de Suporte de TI',
+    company: 'Universidade Regional do Cariri',
+    location: 'Crato, Ceará, Brasil',
+    type: 'full-time',
+    startDate: '2023-11',
+    endDate: '2024-09',
+    current: false,
+    description:
+      'Responsável por garantir o bom funcionamento e a eficiência dos sistemas de rede e hardware da instituição.',
+    achievements: [
+      'Configuração e manutenção de redes de computadores garantindo operação segura',
+      'Diagnóstico e resolução de problemas de hardware e conectividade',
+      'Monitoramento de desempenho de rede e identificação de gargalos',
+      'Implementação de práticas de segurança para proteger a integridade da rede',
+      'Documentação de procedimentos e soluções para problemas recorrentes',
+    ],
+    technologies: ['Redes', 'Hardware', 'Servidores', 'Segurança da Informação', 'Linux'],
+  },
+
+  {
+    id: 'exp-6',
+    title: 'Trainee',
+    company: 'RNP (Rede Nacional de Ensino e Pesquisa)',
+    location: 'Rio de Janeiro, Brasil',
+    type: 'full-time',
+    startDate: '2024-06',
+    endDate: '2024-11',
+    current: false,
+    description:
+      'Implementação e manutenção de ferramentas de monitoramento de rede, como perfSONAR, para medir e avaliar a qualidade e desempenho da rede.',
+    achievements: [
+      'Realização de testes de throughput, latência, RTT, traceroute, HTTP e DNS',
+      'Geração de relatórios detalhados de desempenho de rede',
+      'Desenvolvimento de automações para monitoramento',
+      'Apresentação de soluções em eventos técnicos',
+    ],
+    technologies: ['perfSONAR', 'Linux', 'Docker', 'Virtualização', 'Análise de Dados de Rede'],
+  },
+
+  {
+    id: 'exp-7',
+    title: 'Estagiário de TI',
+    company: 'Prefeitura Municipal de Juazeiro do Norte',
+    location: 'Juazeiro do Norte, Ceará, Brasil',
+    type: 'full-time',
+    startDate: '2022-08',
+    endDate: '2023-08',
+    current: false,
+    description:
+      'Análise, projeção e implantação de ferramentas de propósito específico e análise de dados para o site da prefeitura, além de suporte técnico.',
+    achievements: [
+      'Implantação de ferramentas de análise de dados para o site institucional',
+      'Suporte técnico e atendimento a usuários',
+      'Resolução de problemas relacionados a sistemas e infraestrutura de TI',
+    ],
+    technologies: ['Análise de Dados', 'Suporte TI', 'Web'],
+  },
+
+  {
+    id: 'exp-8',
+    title: 'Bolsista',
+    company: 'Compass UOL',
+    location: 'Brasil (Remoto)',
+    type: 'full-time',
+    startDate: '2022-11',
+    endDate: '2023-04',
+    current: false,
+    description:
+      'Treinamento fullstack com JavaScript, Node.js e trilha de certificação AWS, com foco em desenvolvimento de soluções completas e integração de tecnologias.',
+    achievements: [
+      'Obtenção de certificação AWS durante o programa',
+      'Desenvolvimento de APIs e integrações com AWS Lambda e API Gateway',
+      'Auxílio na implementação de modelos de machine learning com AWS SageMaker',
+      'Desenvolvimento de soluções escaláveis em sprints ágeis',
+    ],
+    technologies: ['JavaScript', 'Node.js', 'AWS', 'AWS SageMaker', 'AWS Lambda', 'API Gateway', 'Machine Learning'],
+  },
+
+  {
+    id: 'exp-9',
+    title: 'Empreendedor - Fundador de Startup',
+    company: 'Cluster de Inovação (Integra Cariri)',
+    location: 'Fortaleza, Ceará, Brasil',
+    type: 'full-time',
+    startDate: '2022-07',
+    endDate: '2023-01',
+    current: false,
+    description:
+      'Fundador da Integra Cariri, startup de tecnologia para mapeamento e informação de rotas de ônibus na região do Cariri, com sistema web responsivo e em tempo real.',
+    achievements: [
+      'Criação de plataforma web para mapeamento de rotas de ônibus',
+      'Sistema de atualização de horários em tempo real',
+      'Interface responsiva e compatível com dispositivos móveis',
+      'Liderança de equipe de 3 pessoas',
+    ],
+    technologies: ['Web', 'JavaScript', 'Mapas', 'Tempo Real', 'Responsividade'],
+  },
+
+  {
+    id: 'exp-10',
+    title: 'Bolsista de Iniciação Científica',
+    company: 'CNPq',
+    location: 'Crato, Ceará, Brasil',
+    type: 'part-time',
+    startDate: '2021-09',
+    endDate: '2022-09',
+    current: false,
+    description:
+      'Pesquisa em Análise de Bases Nacionais Públicas e sua Influência no Fator Educacional, utilizando ferramentas estatísticas para identificar padrões e tendências na educação brasileira.',
+    achievements: [
+      'Análise de grandes conjuntos de dados educacionais com software R',
+      'Identificação de padrões e tendências que impactam a educação no Brasil',
+      'Contribuição para formulação de políticas educacionais mais eficazes',
+    ],
+    technologies: ['R', 'Estatística', 'Análise de Dados', 'Bases de Dados Públicas'],
+  },
+
+  {
+    id: 'exp-11',
+    title: 'Estagiário de TI - Técnico em Informática, Designer Gráfico e Social Media',
+    company: 'JC Atacarejo',
+    location: 'Mauriti, Ceará, Brasil',
+    type: 'full-time',
+    startDate: '2019-08',
+    endDate: '2020-01',
+    current: false,
+    description:
+      'Suporte técnico em informática, design gráfico e gestão de redes sociais para empresa do setor varejista.',
+    achievements: [
+      'Suporte técnico e manutenção de equipamentos de informática',
+      'Criação de materiais gráficos para comunicação visual',
+      'Gestão de redes sociais da empresa',
+    ],
+    technologies: ['Informática', 'Design Gráfico', 'Social Media'],
+  },
 ];
 
-// =============================================================================
-// HELPER FUNCTIONS
-// =============================================================================
-
-/**
- * Get total years of professional experience
- */
 export function getTotalYearsOfExperience(): number {
   if (experience.length === 0) return 0;
 
@@ -245,16 +286,10 @@ export function getTotalYearsOfExperience(): number {
   return years;
 }
 
-/**
- * Get current position (if any)
- */
 export function getCurrentPosition(): Experience | undefined {
   return experience.find((exp) => exp.current);
 }
 
-/**
- * Get all unique technologies across all experience
- */
 export function getAllTechnologies(): string[] {
   const techSet = new Set<string>();
   experience.forEach((exp) => {
@@ -263,20 +298,14 @@ export function getAllTechnologies(): string[] {
   return Array.from(techSet).sort();
 }
 
-/**
- * Format date string (YYYY-MM) to readable format
- */
 export function formatExperienceDate(dateString: string): string {
   const date = new Date(dateString + '-01');
-  return date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+  return date.toLocaleDateString('pt-BR', { month: 'short', year: 'numeric' });
 }
 
-/**
- * Get experience duration as string
- */
 export function getExperienceDuration(exp: Experience): string {
   const start = new Date(exp.startDate);
-  const end = exp.current ? new Date() : new Date(exp.endDate + '-01');
+  const end = exp.current ? new Date() : new Date((exp.endDate ?? '') + '-01');
 
   const months =
     (end.getFullYear() - start.getFullYear()) * 12 +
