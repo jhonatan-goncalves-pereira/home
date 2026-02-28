@@ -25,6 +25,7 @@ export const skillCategories: string[] = [
   'QA & Testes',
   'Cloud & DevOps',
   'Dados & BI',
+  'Metodologias',
 ];
 
 export const skills: Skill[] = [
@@ -73,30 +74,60 @@ export const skills: Skill[] = [
   // ---------------------------------------------------------------------------
   {
     name: 'React',
-    level: 85,
+    level: 88,
     category: 'Frontend',
     yearsOfExperience: 3,
   },
   {
+    name: 'Next.js',
+    level: 82,
+    category: 'Frontend',
+    yearsOfExperience: 2,
+  },
+  {
+    name: 'Vue.js',
+    level: 72,
+    category: 'Frontend',
+    yearsOfExperience: 1,
+  },
+  {
     name: 'HTML & CSS',
-    level: 90,
+    level: 92,
     category: 'Frontend',
     yearsOfExperience: 5,
   },
   {
-    name: 'Bootstrap',
+    name: 'Tailwind CSS',
     level: 85,
+    category: 'Frontend',
+    yearsOfExperience: 2,
+  },
+  {
+    name: 'Bootstrap',
+    level: 88,
     category: 'Frontend',
     yearsOfExperience: 3,
   },
   {
-    name: 'Chart.js',
+    name: 'Redux / Zustand',
     level: 75,
     category: 'Frontend',
     yearsOfExperience: 2,
   },
   {
-    name: 'AOS.js',
+    name: 'React Hook Form',
+    level: 80,
+    category: 'Frontend',
+    yearsOfExperience: 2,
+  },
+  {
+    name: 'Chart.js / Recharts',
+    level: 78,
+    category: 'Frontend',
+    yearsOfExperience: 2,
+  },
+  {
+    name: 'Framer Motion',
     level: 70,
     category: 'Frontend',
     yearsOfExperience: 1,
@@ -107,37 +138,55 @@ export const skills: Skill[] = [
   // ---------------------------------------------------------------------------
   {
     name: 'Node.js',
-    level: 88,
-    category: 'Backend',
-    yearsOfExperience: 4,
-  },
-  {
-    name: 'Express.js',
-    level: 85,
-    category: 'Backend',
-    yearsOfExperience: 3,
-  },
-  {
-    name: 'Spring Boot',
-    level: 75,
-    category: 'Backend',
-    yearsOfExperience: 2,
-  },
-  {
-    name: 'API REST',
     level: 90,
     category: 'Backend',
     yearsOfExperience: 4,
   },
   {
-    name: 'JWT',
-    level: 80,
+    name: 'Express.js',
+    level: 88,
+    category: 'Backend',
+    yearsOfExperience: 3,
+  },
+  {
+    name: 'NestJS',
+    level: 75,
+    category: 'Backend',
+    yearsOfExperience: 1,
+  },
+  {
+    name: 'Spring Boot',
+    level: 78,
+    category: 'Backend',
+    yearsOfExperience: 2,
+  },
+  {
+    name: 'API REST',
+    level: 92,
+    category: 'Backend',
+    yearsOfExperience: 4,
+  },
+  {
+    name: 'GraphQL',
+    level: 68,
+    category: 'Backend',
+    yearsOfExperience: 1,
+  },
+  {
+    name: 'JWT / OAuth2',
+    level: 82,
     category: 'Backend',
     yearsOfExperience: 2,
   },
   {
     name: 'Prisma ORM',
-    level: 75,
+    level: 78,
+    category: 'Backend',
+    yearsOfExperience: 1,
+  },
+  {
+    name: 'Microserviços',
+    level: 72,
     category: 'Backend',
     yearsOfExperience: 1,
   },
@@ -215,27 +264,73 @@ export const skills: Skill[] = [
   },
   {
     name: 'Docker',
-    level: 75,
+    level: 78,
     category: 'Cloud & DevOps',
     yearsOfExperience: 2,
   },
   {
-    name: 'Git',
-    level: 88,
+    name: 'Git / GitHub',
+    level: 90,
     category: 'Cloud & DevOps',
     yearsOfExperience: 4,
   },
   {
-    name: 'CI/CD',
-    level: 70,
+    name: 'GitHub Actions',
+    level: 72,
+    category: 'Cloud & DevOps',
+    yearsOfExperience: 1,
+  },
+  {
+    name: 'CI/CD Pipelines',
+    level: 72,
     category: 'Cloud & DevOps',
     yearsOfExperience: 1,
   },
   {
     name: 'Linux',
-    level: 75,
+    level: 78,
     category: 'Cloud & DevOps',
     yearsOfExperience: 3,
+  },
+  {
+    name: 'Vercel / Netlify',
+    level: 82,
+    category: 'Cloud & DevOps',
+    yearsOfExperience: 2,
+  },
+
+  // ---------------------------------------------------------------------------
+  // METODOLOGIAS
+  // ---------------------------------------------------------------------------
+  {
+    name: 'Scrum / Agile',
+    level: 85,
+    category: 'Metodologias',
+    yearsOfExperience: 3,
+  },
+  {
+    name: 'Kanban',
+    level: 85,
+    category: 'Metodologias',
+    yearsOfExperience: 3,
+  },
+  {
+    name: 'Clean Code',
+    level: 80,
+    category: 'Metodologias',
+    yearsOfExperience: 2,
+  },
+  {
+    name: 'SOLID',
+    level: 78,
+    category: 'Metodologias',
+    yearsOfExperience: 2,
+  },
+  {
+    name: 'Design Patterns',
+    level: 75,
+    category: 'Metodologias',
+    yearsOfExperience: 2,
   },
 
   // ---------------------------------------------------------------------------

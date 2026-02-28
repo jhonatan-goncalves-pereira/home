@@ -21,7 +21,7 @@ export interface Profile {
 
 export const profile: Profile = {
   name: 'Jhonatan Gonçalves',
-  title: 'FullStack Developer | QA | Analista Power BI',
+  title: 'Desenvolvedor FullStack Pleno | React · Node.js · Java | QA & Power BI',
   photo: '/images/profile.jpg',
   email: 'jhonatangoncalves2002@gmail.com',
   location: 'Juazeiro do Norte, CE, Brasil',
@@ -30,9 +30,10 @@ export const profile: Profile = {
   github: 'https://github.com/jhonatan-goncalvespereira',
   website: 'https://jhonatan-goncalvespereira.github.io/residencia-iuul/',
 
-  summary: `Graduando em Sistemas de Informação com sólida experiência em TI, desenvolvimento Full Stack, QA e análise de dados com Power BI. Atuei em projetos desafiadores nas áreas pública e privada, acumulando competências técnicas e visão estratégica para soluções de software, automação de processos e transformação digital. Sempre aberto a novos desafios como Desenvolvedor Full Stack ou Analista de Dados, com foco em inovação, colaboração em equipe e impacto social através da tecnologia.`,
+  summary: `Desenvolvedor FullStack Pleno com sólida experiência em React, Next.js, Node.js, Java e Spring Boot. Atuo no desenvolvimento de aplicações web completas — do design de interfaces responsivas com Tailwind CSS e React até APIs RESTful robustas com Node.js/Express e Spring Boot, integradas a bancos de dados relacionais (PostgreSQL, MySQL) e não-relacionais. Tenho experiência em QA (Selenium, Cypress, REST Assured), análise de dados com Power BI e atuação em projetos de transformação digital no setor público e privado. Fundador da startup Integra Cariri e bolsista CNPq, com foco em código limpo, boas práticas (SOLID, Clean Code) e entrega de valor real através da tecnologia.`,
 
   highlights: [
+    'FullStack com React, Next.js, Node.js, Express, Spring Boot e TypeScript',
     'Desenvolvedor Full Stack na Universidade Regional do Cariri há mais de 1 ano',
     'Experiência em QA com Selenium, Cypress, REST Assured e Postman',
     'Atuação em projetos de transformação digital no setor público',
