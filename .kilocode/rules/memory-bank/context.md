@@ -98,3 +98,4 @@ Edit `src/config/site.config.ts` → `features`:
 | Date | Activity |
 |------|----------|
 | 2026-01-22 | Memory bank updated to match .kilocode standard structure |
+| 2026-02-28 | All data files customized with Jhonatan Gonçalves's real information (profile, experience, skills, education, certifications, projects) |
