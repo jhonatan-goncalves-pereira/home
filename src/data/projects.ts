@@ -24,7 +24,7 @@ export interface Project {
 
 export const projectCategories: string[] = [
   'All',
-  'Web Application',
+  'Web Development',
   'Sistema Institucional',
   'Startup',
   'QA & Automação',
@@ -32,6 +32,54 @@ export const projectCategories: string[] = [
 ];
 
 export const projects: Project[] = [
+  // Novos projetos de Web Development
+  {
+    id: 'proj-0',
+    slug: 'sistema-eventos-universitario',
+    title: 'Sistema de Eventos Universitários',
+    description:
+      'Plataforma completa para gestão de eventos acadêmicos e institucionais com criação, inscrição e certificação.',
+    longDescription: `Sistema web completo para gerenciamento de eventos universitários, permitindo a criação de eventos, 
+    inscrição de participantes, emissão de certificados e geração de relatórios. Inclui painel administrativo para 
+    gerenciamento de usuários, eventos e certificados. Interface responsiva e intuitiva para melhor experiência 
+    dos usuários.`,
+    thumbnail: '/projects/eventos-thumb.jpg',
+    images: [],
+    technologies: ['React', 'Node.js', 'Express', 'PostgreSQL', 'TypeScript', 'JWT', 'Prisma', 'Docker'],
+    category: 'Web Development',
+    role: 'Desenvolvedor Full Stack',
+    duration: '4 meses',
+    featured: true,
+    highlights: [
+      'Sistema completo de gestão de eventos e inscrições',
+      'Emissão automática de certificados em PDF',
+      'Painel administrativo com dashboards e relatórios',
+      'API RESTful com documentação Swagger',
+    ],
+  },
+  {
+    id: 'proj-00',
+    slug: 'api-restaurante-universitario',
+    title: 'API Restaurante Universitário',
+    description:
+      'API RESTful para gestão de um Restaurante Universitário com controle de estoque, pedidos e relatórios.',
+    longDescription: `API RESTful completa para automação das operações do Restaurante Universitário, incluindo 
+    controle de estoque de ingredientes, gerenciamento de pedidos, cardápio diário e relatórios gerenciais. 
+    Sistema desenvolvido com foco em escalabilidade, segurança e performance.`,
+    thumbnail: '/projects/ru-api-thumb.jpg',
+    images: [],
+    technologies: ['Node.js', 'NestJS', 'TypeScript', 'PostgreSQL', 'TypeORM', 'Docker', 'JWT', 'Swagger'],
+    category: 'Web Development',
+    role: 'Desenvolvedor Backend',
+    duration: '3 meses',
+    featured: true,
+    highlights: [
+      'API RESTful completa com NestJS',
+      'Controle de estoque e inventário',
+      'Sistema de pedidos e cardápio',
+      'Documentação automática com Swagger',
+    ],
+  },
   {
     id: 'proj-1',
     slug: 'sistemas-institucionais-urca',

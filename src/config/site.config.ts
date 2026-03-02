@@ -156,7 +156,7 @@ export const siteConfig: SiteConfig = {
     // - Red: "0 80% 50%"
     primaryColor: '200 85% 55%',
     darkModeEnabled: true,
-    defaultColorMode: 'system',
+    defaultColorMode: 'dark',
     fontFamily: 'Inter',
   },
 
