@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className="scroll-smooth">
+    <html lang="pt-BR" className="dark scroll-smooth">
       <body className={`${inter.variable} font-sans bg-[hsl(var(--background))] text-[hsl(var(--foreground))] antialiased`}>
         <Header />
         <SideNav />
