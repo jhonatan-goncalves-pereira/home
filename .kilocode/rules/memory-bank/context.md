@@ -104,3 +104,4 @@ Edit `src/config/site.config.ts` → `features`:
 | 2026-01-22 | Memory bank updated to match .kilocode standard structure |
 | 2026-02-28 | All data files customized with Jhonatan Gonçalves's real information (profile, experience, skills, education, certifications, projects) |
 | 2026-02-28 | Expanded skills with fullstack technologies (Next.js, Vue, Tailwind, NestJS, GraphQL, etc.), added Metodologias category, improved profile title and summary for fullstack pleno/sênior level |
+| 2026-03-02 | Enabled dark mode as default theme, added 2 new web development projects (Sistema de Eventos Universitários and API Restaurante Universitário)
