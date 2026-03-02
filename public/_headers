@@ -1,0 +1,19 @@
+# Cloudflare Pages headers for Next.js static export
+
+# Cache static assets
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache images
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache project images
+/projects/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Disable Cloudflare performance features that interfere with Next.js
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
