@@ -1,5 +1,0 @@
-name = "live-resume"
-compatibility_date = "2024-01-01"
-
-# Force static export - this tells Cloudflare to serve from _static
-pages_build_output_dir = "./out"

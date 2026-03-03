@@ -18,6 +18,7 @@ export interface Project {
   duration: string;
   liveUrl?: string;
   githubUrl?: string;
+  logo?: string;
   featured: boolean;
   highlights: string[];
 }
@@ -50,6 +51,7 @@ export const projects: Project[] = [
     role: 'Desenvolvedor Full Stack',
     duration: '4 meses',
     featured: true,
+    logo: 'https://awsmp-logos.s3.amazonaws.com/c859e2b3-99ed-4dad-8ca5-5bbed6556ff0/efa7397e34f3d513cc3053f30b46c040.png',
     highlights: [
       'Sistema completo de gestão de eventos e inscrições',
       'Emissão automática de certificados em PDF',
@@ -73,6 +75,7 @@ export const projects: Project[] = [
     role: 'Desenvolvedor Backend',
     duration: '3 meses',
     featured: true,
+    logo: 'https://awsmp-logos.s3.amazonaws.com/c859e2b3-99ed-4dad-8ca5-5bbed6556ff0/efa7397e34f3d513cc3053f30b46c040.png',
     highlights: [
       'API RESTful completa com NestJS',
       'Controle de estoque e inventário',
@@ -97,6 +100,7 @@ export const projects: Project[] = [
     role: 'Desenvolvedor Full Stack',
     duration: 'Em andamento (desde ago/2024)',
     featured: true,
+    logo: 'https://s1.static.brasilescola.uol.com.br/be/vestibular/-588b2d99e35c9.jpg',
     highlights: [
       'Sistemas de média e alta complexidade em produção',
       'APIs RESTful integradas com plataformas externas',
@@ -170,6 +174,7 @@ export const projects: Project[] = [
     role: 'QA Analyst',
     duration: '6 meses',
     featured: true,
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjz4hloPSvYoG3QrW2q_H9-9CmtSrvL0Zx-g&s',
     highlights: [
       'Automação de testes de UI com Selenium e Cypress',
       'Testes de API com REST Assured e Postman',
@@ -194,6 +199,7 @@ export const projects: Project[] = [
     role: 'Pesquisador (Bolsista CNPq)',
     duration: '1 ano',
     featured: false,
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTOxdNxkTvanKfa9M4W5sXgvvbsj7c5JkOHw&s',
     highlights: [
       'Análise de grandes conjuntos de dados educacionais',
       'Identificação de padrões e tendências na educação brasileira',
@@ -219,6 +225,7 @@ export const projects: Project[] = [
     role: 'Monitor Bolsista',
     duration: 'Em andamento (desde ago/2025)',
     featured: false,
+    logo: 'https://www.gov.br/saude/pt-br/composicao/sgtes/pet-saude/imagens/PETSAUDE.png/@@images/d5c89d72-fbca-4829-b024-602106508ffc.png',
     highlights: [
       'Interoperabilidade entre DATASUS e e-SUS',
       'Análise e sistematização de dados em saúde',
