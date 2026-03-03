@@ -23,7 +23,7 @@ export const profile: Profile = {
   name: 'Jhonatan Gonçalves',
   title: 'Desenvolvedor FullStack Pleno | React · Node.js · Java | QA & Power BI',
   photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStCIcsUthPouVDRMNxZyrtjxFz91sNoO6xcA&s',
-  email: 'jhonatan.pereira@urca.br',
+  email: 'jhonatanfullstack@gmail.com',
   phone: '88992909975',
   location: 'Juazeiro do Norte, CE, Brasil',
 

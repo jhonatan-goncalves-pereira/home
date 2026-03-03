@@ -21,25 +21,6 @@ export interface Experience {
 
 export const experience: Experience[] = [
   {
-    id: 'exp-1',
-    title: 'Monitor Bolsista',
-    company: 'PET - Programa de Educação Tutorial (PET-Saúde/I&SD)',
-    location: 'Juazeiro do Norte, Ceará, Brasil',
-    type: 'part-time',
-    startDate: '2025-08',
-    current: true,
-    description:
-      'Monitor bolsista no projeto PET-Saúde Informação e Saúde Digital, no Eixo 2 da Secretaria Municipal de Saúde de Juazeiro do Norte, com foco em interoperabilidade dos sistemas de informação em saúde (DATASUS e e-SUS) e transformação digital do SUS.',
-    achievements: [
-      'Análise, organização e sistematização de dados em saúde para qualificar processos de trabalho',
-      'Promoção do letramento digital entre profissionais de saúde',
-      'Fortalecimento da integração entre universidade e serviço público de saúde',
-      'Apoio à transformação digital do SUS no município',
-    ],
-    technologies: ['DATASUS', 'e-SUS', 'Power BI', 'Análise de Dados'],
-  },
-
-  {
     id: 'exp-2',
     title: 'Desenvolvedor Full Stack',
     company: 'Universidade Regional do Cariri',
@@ -72,6 +53,25 @@ export const experience: Experience[] = [
       'Chart.js',
       'JWT',
     ],
+  },
+
+  {
+    id: 'exp-1',
+    title: 'Monitor Bolsista',
+    company: 'PET - Programa de Educação Tutorial (PET-Saúde/I&SD)',
+    location: 'Juazeiro do Norte, Ceará, Brasil',
+    type: 'part-time',
+    startDate: '2025-08',
+    current: true,
+    description:
+      'Monitor bolsista no projeto PET-Saúde Informação e Saúde Digital, no Eixo 2 da Secretaria Municipal de Saúde de Juazeiro do Norte, com foco em interoperabilidade dos sistemas de informação em saúde (DATASUS e e-SUS) e transformação digital do SUS.',
+    achievements: [
+      'Análise, organização e sistematização de dados em saúde para qualificar processos de trabalho',
+      'Promoção do letramento digital entre profissionais de saúde',
+      'Fortalecimento da integração entre universidade e serviço público de saúde',
+      'Apoio à transformação digital do SUS no município',
+    ],
+    technologies: ['DATASUS', 'e-SUS', 'Power BI', 'Análise de Dados'],
   },
 
   {
